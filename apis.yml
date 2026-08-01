@@ -1,7 +1,29 @@
 aid: ruma-care
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ruma-care.png
 name: Ruma Care
-description: Ruma Care is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Ruma Care is a healthcare software company that streamlines the prior
+  authorization process for biologic and infusion medications in infusion
+  clinics. Its AI-powered platform pulls patient and insurance data from
+  electronic health records (EHRs) to identify payer requirements, auto-populates
+  payer-specific prior authorization forms with clinical data, flags missing
+  documentation, and then manages insurer communication and follow-up until an
+  authorization is approved. Built by former infusion clinic staff, Ruma Care
+  consolidates the manual portal, fax, and paper workflows behind buy-and-bill
+  and infusion services into a single platform to reduce denials and accelerate
+  patient access to biologics. Ruma Care is a Y Combinator-backed company. As of
+  this profile the company exposes no public API or developer platform.
 url: https://raw.githubusercontent.com/api-evangelist/ruma-care/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +33,38 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Healthcare
+- Prior Authorization
+- Health Insurance
+- Infusion
+- Biologics
+- Automation
+- Health IT
+- EHR
 apis: []
+common:
+- type: DomainSecurity
+  url: security/ruma-care-domain-security.yml
+- type: Website
+  url: https://rumacare.com
+- type: PrivacyPolicy
+  url: https://rumacare.com/privacy_policy
+- type: TermsOfService
+  url: https://rumacare.com/terms_of_use
+- type: SignUp
+  url: https://rumacare.com/contact
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ruma-care
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
